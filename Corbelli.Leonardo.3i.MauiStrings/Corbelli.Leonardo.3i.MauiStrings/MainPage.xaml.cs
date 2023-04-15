@@ -90,6 +90,11 @@ public partial class MainPage : ContentPage
         return new string(txtCharArrayReverse);
     }
 
+    string quantelettere(string stringin)
+    {
+        return stringin; 
+    }
+
     private void stringabtn(object sender, EventArgs e)
 	{
         stringaout.Text =
@@ -97,7 +102,8 @@ public partial class MainPage : ContentPage
            $"Minuscolo: {Minuscolo(stringain.Text)} \n" +
            $"solo lettere: {Sololettere(stringain.Text)} \n" +
            $"alfa numerico: {Alfanumerici(stringain.Text)} \n" +
-           $"all'incontrario: {Incontrario(stringain.Text)} \n";
+           $"all'incontrario: {Incontrario(stringain.Text)} \n" +
+           $"quante parole ci sono: {quantelettere(stringain.Text)} \n";
 
     }
 
