@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Corbelli.Leonardo._3i.MauiStrings.MainPage">
+
+    <ScrollView BackgroundColor="Blue">
+        
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Benvenuti nel convertitore di stringe"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                TextColor="White"
+                />
+
+            <Label
+                Text="Inserire la tua stringa qui sotto"
+                FontSize="15"
+                HorizontalTextAlignment="Center"
+                TextColor="White"
+                />
+
+            <Editor
+                x:Name="stringain"
+                FontSize="15"
+                HeightRequest="50"
+                WidthRequest="500"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                TextColor="White"
+                />
+
+            <Label
+                Text="Stringa finale"
+                x:Name="stringaout"
+                FontSize="15"
+                TextColor="White"
+                />
+
+            <Button
+                x:Name="Button"
+                Text="invia"
+                Clicked="stringabtn" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
